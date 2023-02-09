@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { Link, Routes, Route, useNavigate } from "react-router-dom";
 
-function App() {
+
+const App = () => {
+  const dispatch = useDispatch();
+  const navigate = useNavigate(); 
+  //add routes ** app components
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

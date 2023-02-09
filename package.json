@@ -52,5 +52,18 @@
     "redux-thunk": "^2.4.2",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
-  }
+  },
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neherdata/www-fasttimes-dot-ink.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neherdata/www-fasttimes-dot-ink/issues"
+  },
+  "homepage": "https://github.com/neherdata/www-fasttimes-dot-ink#readme"
 }
