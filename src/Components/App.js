@@ -1,29 +1,23 @@
-import React, { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { Link, Routes, Route, useNavigate } from "react-router-dom";
-
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./Home";
+import Artists from "./Artists";
+import ContactUs from "./Contact";
+import Faq from "./Faq";
+import Navi from "./Nav";
 
 const App = () => {
-  const dispatch = useDispatch();
-  const navigate = useNavigate(); 
-  //add routes ** app components
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navi />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/artists" element={<Artists />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/faq" element={<Faq />} />
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;

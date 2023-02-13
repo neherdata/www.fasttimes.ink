@@ -1,6 +1,6 @@
 const app = require("./app");
 
-// any DB pulls ?
+// db pulls for email storing , later.
 
 const init = async () => {
   try {

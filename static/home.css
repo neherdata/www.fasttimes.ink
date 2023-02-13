@@ -1,0 +1,43 @@
+.info-row {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.05);
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    
+}
+
+ .row-obj {
+  text-align: center;
+}
+
+ .home-bg {
+      filter: grayscale(100%);
+      z-index: 998;
+ }
+ 
+ .home {
+    margin-right: auto;
+    margin-left: auto;
+}
+ 
+  .info-row :hover div{
+     border: 2px;
+     border-color: white;
+     border-style: outset;
+ } 
+ 
+ .info-obj{
+   display: flex;
+   margin:auto;
+   justify-content: space-between;
+    align-items: center;
+ }
+ 
+ /*.row-obj:hover i{*/
+ /*    box-shadow: 0px 0px 0px 13px #000;*/
+ /*    border: 2px;*/
+ /*    border-color: white;*/
+ /*    border-style: outset;*/
+ /*}*/

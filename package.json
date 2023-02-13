@@ -1,6 +1,7 @@
 {
   "name": "www-fasttimes-dot-ink",
   "version": "0.1.0",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -8,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "express": "^4.18.2",
     "pg": "^8.9.0",
+    "react-icons": "^4.7.1",
     "react-scripts": "5.0.1",
     "sequelize": "^6.28.0",
     "web-vitals": "^2.1.4"
@@ -15,7 +17,7 @@
   "scripts": {
     "start": "start",
     "build": "webpack",
-    "start:dev": "nodemon server/index.js --ignore dist/ --ignore src / @ npm run build:dev",
+    "start:dev": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
     "build:dev": "npm run build -- --watch --mode=development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -54,7 +56,6 @@
     "webpack-cli": "^5.0.1"
   },
   "description": "",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/neherdata/www-fasttimes-dot-ink.git"
