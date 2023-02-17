@@ -1,43 +1,38 @@
 .info-row {
     display: flex;
-    flex-direction: row;
-    background-color: rgba(0,0,0,0.05);
-    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
     align-items: center;
-    font-size: 30px;
-    
-}
-
- .row-obj {
-  text-align: center;
-}
-
- .home-bg {
-      filter: grayscale(100%);
-      z-index: 998;
- }
- 
- .home {
-    margin-right: auto;
-    margin-left: auto;
+    text-align: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
 }
  
-  .info-row :hover div{
-     border: 2px;
-     border-color: white;
-     border-style: outset;
+.info-row > .info-obj:hover {
+   border: 0.5px;
+   border-color: white;
+   border-style: solid;
+   background-color: rgba(0,0,0,0.5);
  } 
- 
- .info-obj{
-   display: flex;
-   margin:auto;
-   justify-content: space-between;
-    align-items: center;
+
+.info-obj{
+ flex: 1 1 10em;
+ background-color: rgba(0,0,0,0.2);
+ height: 100%;
+ width: 100%;
  }
  
- /*.row-obj:hover i{*/
- /*    box-shadow: 0px 0px 0px 13px #000;*/
- /*    border: 2px;*/
- /*    border-color: white;*/
- /*    border-style: outset;*/
- /*}*/
+ .info-obj > h5 > a  {
+  color: white;
+ }
+ .info-obj > a  {
+  color: white;
+ }
+ 
+.home-bg {
+  filter: grayscale(100%);
+  z-index: -1;
+  position: relative;
+ }
+ 
