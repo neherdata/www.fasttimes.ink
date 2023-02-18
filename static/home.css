@@ -1,3 +1,4 @@
+/* image && detail styling */
 .info-row {
     display: flex;
     flex-wrap: wrap;
@@ -10,29 +11,111 @@
 }
  
 .info-row > .info-obj:hover {
-   border: 0.5px;
-   border-color: white;
+   border: 0.2px;
+   border-color: grey;
    border-style: solid;
    background-color: rgba(0,0,0,0.5);
  } 
+ 
+
 
 .info-obj{
  flex: 1 1 10em;
  background-color: rgba(0,0,0,0.2);
  height: 100%;
  width: 100%;
+ transition: .3s;
  }
  
- .info-obj > h5 > a  {
+ .info-obj > h5 > a{
   color: white;
+  font-size: 1.25rem
  }
- .info-obj > a  {
+ .info-obj > a {
   color: white;
+  font-size: 1.25rem
  }
  
+ .info-obj > h5 > a:hover {
+  color: #FFDAB9;
+  
+ }
+ .info-obj > a:hover  {
+  color: #FFDAB9;
+  
+ }
+ 
+
 .home-bg {
   filter: grayscale(100%);
   z-index: -1;
   position: relative;
  }
  
+ /* artist styling */
+ 
+ .artist-cards  {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     /*margin-right: -15px;*/
+     /*margin-left: -15px;*/
+     flex: 1 1 10em;
+     box-sizing: border-box;
+     justify-content: space-around;
+     margin-top: 2%;
+     align-items: center;
+    
+ }
+ .artist-cards > .h3:hover{
+     color: white;
+ }
+ .artist-cards > div {
+      display: flex;
+     flex-wrap: wrap;
+     padding: 0 0 5rem ;
+    text-transform: capitalize;
+ }
+ 
+
+ .card{
+     margin: auto;
+ }
+  /*Jeff Michel Hans Ryan Isaiah Onaga Karissa Anne Billy Pappas*/
+  
+  /*About section */
+ .about > h1 {
+     display: flex;
+     text-transform: capitalize;
+     text-shadow: 0 4px 4px rgb(0 0 0 / 40%);
+     justify-content: center;
+ }
+ 
+ .about > h2{
+     display: flex;
+     justify-content: center;
+ }
+ 
+ /* Footer */
+ .footer {
+     display: flex;
+     flex-direction: row;
+     width: 100%;
+     background-color: black;
+     color: white;
+      justify-content: center;
+ }
+ 
+@media screen and (max-width:940px) {
+    .info-row{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    
+    .info-obj{
+        flex: 1 1 1em;
+        width: 95%;
+    }
+}

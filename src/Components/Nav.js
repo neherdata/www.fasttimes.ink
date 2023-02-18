@@ -19,7 +19,7 @@ const Navi = () => {
 
   return (
     <div className={show ? "header header-bg" : "header"}>
-      <div className={show ? "logo-display-2" : "logo-display-1"}>
+      <div className={show ? "logo-dis" : "logo-mob"}>
         <a href="/" className="logo">
           <img src="" alt="logo" />
         </a>
@@ -34,7 +34,7 @@ const Navi = () => {
           )}
         </div>
 
-        <ul className={click ? "nav-menu active" : "nav-menu"}>
+        <ul className={click ? "nav-menu-active" : "nav-menu"}>
           <ul className="nav-item">
             <a href="/" onClick={closeMenu}>
               Home

@@ -1,6 +1,15 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { Button, CardActionArea, CardActions } from "@mui/material";
+import { orange } from "@mui/material/colors";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+
+const color = orange[100];
 
 export const Home = () => {
   // OVERALL PLANS: Compress contact info into background; Add in artist cards w/ links to individual socials; add in contact section on bottom; add in footer;
@@ -16,6 +25,7 @@ export const Home = () => {
             height="100%"
             className="home-bg"
           />
+
           <div className="info-row">
             <div className="info-obj">
               <h5>
@@ -35,7 +45,6 @@ export const Home = () => {
                 <a href="tel:7322801238">
                   <i className="fa fa-phone mr-3"></i>732-280-1238
                 </a>
-
                 <br />
                 <a href="mailto:blankemail.com">
                   <i className="fa fa-envelope-o mr-3"></i> *Email Placeholder*
@@ -58,7 +67,234 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="artist-cards">scnaincjsn</div>
+        <div className="artist-cards">
+          <Card
+            sx={{ maxWidth: 650, backgroundColor: "#4f4a47" }}
+            className="card"
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                width="400"
+                image=""
+                alt="Jeff Michel"
+                sx={{ backgroundColor: "grey" }}
+              />
+            </CardActionArea>
+            <CardContent>
+              <Typography gutterBottom variant="h4" sx={{ color: "#FFDAB9" }}>
+                JEFF MICHEL {"     "}
+              </Typography>
+            </CardContent>
+            <CardActions
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "baseline",
+                color: "white",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Work
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Instagram
+              </Typography>
+              <Button
+                className="baa-btn"
+                variant="contained"
+                size="large"
+                href="#contained-buttons"
+                sx={{
+                  color: "#FFFAF0",
+                  backgroundColor: "#FFDAB9",
+                  "&:hover": {
+                    backgroundColor: "#ffb237",
+                  },
+                }}
+              >
+                Book an Appointment
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card
+            sx={{ maxWidth: 650, backgroundColor: "#4f4a47" }}
+            className="card"
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                width="400"
+                image=""
+                alt="Hans Ryan"
+                sx={{ backgroundColor: "grey" }}
+              />
+            </CardActionArea>
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                className="artist"
+                sx={{ color: "#FFDAB9" }}
+              >
+                HANS RYAN{"     "}
+              </Typography>
+            </CardContent>
+            <CardActions
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "baseline",
+                color: "white",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Work
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Instagram
+              </Typography>
+              <Button
+                className="baa-btn"
+                variant="contained"
+                size="large"
+                href="#contained-buttons"
+                sx={{
+                  color: "#FFFAF0",
+                  backgroundColor: "#FFDAB9",
+                  "&:hover": {
+                    backgroundColor: "#ffb237",
+                  },
+                }}
+              >
+                Book an Appointment
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card
+            sx={{
+              maxWidth: 650,
+              backgroundColor: "#4f4a47",
+            }}
+            className="card"
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                width="400"
+                image=""
+                alt="Karissa Anne"
+                sx={{ backgroundColor: "grey" }}
+              />
+            </CardActionArea>
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                sx={{
+                  color: "#FFDAB9",
+                }}
+              >
+                KARISSA ANNE
+              </Typography>
+            </CardContent>
+            <CardActions
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "baseline",
+                color: "white",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Work
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Instagram
+              </Typography>
+              <Button
+                className="baa-btn"
+                variant="contained"
+                size="large"
+                href="#contained-buttons"
+                sx={{
+                  color: "#FFFAF0",
+                  backgroundColor: "#FFDAB9",
+                  "&:hover": {
+                    backgroundColor: "#ffd084",
+                  },
+                }}
+              >
+                Book an Appointment
+              </Button>
+            </CardActions>
+          </Card>
+        </div>
+
+        <div className="about">
+          <h1> ABOUT FAST TIMES TATTOO </h1>
+          <h2> Text Placeholder</h2>
+        </div>
+      </div>
+      <div className="footer">
+        <div className="s"></div>© 2023 Copyright Fast Times Tattoo. All rights
+        reserved.
       </div>
     </>
   );
