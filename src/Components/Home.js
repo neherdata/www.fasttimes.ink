@@ -8,6 +8,9 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import { orange } from "@mui/material/colors";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import PhoneIcon from "@mui/icons-material/Phone";
+import RoomIcon from "@mui/icons-material/Room";
 
 const color = orange[100];
 
@@ -34,35 +37,34 @@ export const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <i className="fas fa-map-marker-alt"></i>727 17th Ave
-                  <br />
-                  Belmar, NJ 07719
+                  <RoomIcon />
+                  727 17th Ave <br /> Belmar, NJ 07719
                 </a>
               </h5>
             </div>
             <div className="info-obj">
               <h5>
                 <a href="tel:7322801238">
-                  <i className="fa fa-phone mr-3"></i>732-280-1238
+                  <PhoneIcon />
+                  732-280-1238
                 </a>
                 <br />
-                <a href="mailto:blankemail.com">
-                  <i className="fa fa-envelope-o mr-3"></i> *Email Placeholder*
-                </a>
+                <a href="mailto:blankemail.com">*Email Placeholder*</a>
                 <br />
               </h5>
             </div>
             <div className="info-obj">
-              <a
-                href="https://www.google.com/maps/place/Fast+Times+Tattoo/@40.1730729,-74.0318747,17z/data=!3m1!4b1!4m6!3m5!1s0x89c227fd8642a003:0xd25dd79794c88956!8m2!3d40.1730729!4d-74.029686!16s%2Fg%2F11b5wrwkl1"
-                rel="noreferrer"
-              >
-                <h5>
-                  <i className="fa fa-calendar mr-3"></i>Mon-Sun 1pm - 8pm
+              <h5>
+                <a
+                  href="https://www.google.com/maps/place/Fast+Times+Tattoo/@40.1730729,-74.0318747,17z/data=!3m1!4b1!4m6!3m5!1s0x89c227fd8642a003:0xd25dd79794c88956!8m2!3d40.1730729!4d-74.029686!16s%2Fg%2F11b5wrwkl1"
+                  rel="noreferrer"
+                >
+                  <CalendarMonthIcon />
+                  Mon-Sun 1pm - 8pm
                   <br />
                   Sun 12pm - 5pm
-                </h5>
-              </a>
+                </a>
+              </h5>
             </div>
           </div>
         </div>
