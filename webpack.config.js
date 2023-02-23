@@ -1,6 +1,11 @@
-// export const devtool = "source-map";
-// export const mode = "none";
-export const module = {
+// const devtool = "source-map";
+
+module.exports = {
+  devtool: "source-map",
+  mode: "none",
+};
+
+module.rules = {
   rules: [
     {
       test: /\.js$/,
