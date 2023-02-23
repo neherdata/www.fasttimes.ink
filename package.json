@@ -21,7 +21,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
     "build": "react-scripts build",
     "start:dev": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
     "build:dev": "npm run build -- --watch --mode=development",
