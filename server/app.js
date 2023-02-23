@@ -1,27 +1,27 @@
-const express = require("express");
+import express, { json, static } from "express";
 const app = express();
-const path = require("path");
+import { join } from "path";
 
-module.exports = app;
+export default app;
 
-app.use(express.json());
-app.use("/dist", express.static(path.join(__dirname, "../dist")));
-app.use("/static", express.static(path.join(__dirname, "../static")));
+app.use(json());
+app.use("/dist", static(join(__dirname, "../dist")));
+app.use("/static", static(join(__dirname, "../static")));
 
 app.get("/", (req, res) =>
-  res.sendFile(path.join(__dirname, "../static/index.html"))
+  res.sendFile(join(__dirname, "../static/index.html"))
 );
 
 app.get("/artists", (req, res) => {
-  res.sendFile(path.join(__dirname, "../static/index.html"));
+  res.sendFile(join(__dirname, "../static/index.html"));
 });
 
 app.get("/contact", (req, res) => {
-  res.sendFile(path.join(__dirname, "../static/index.html"));
+  res.sendFile(join(__dirname, "../static/index.html"));
 });
 
 app.get("/faq", (req, res) => {
-  res.sendFile(path.join(__dirname, "../static/index.html"));
+  res.sendFile(join(__dirname, "../static/index.html"));
 });
 
 app.use((err, req, res, next) => {

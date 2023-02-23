@@ -1,4 +1,4 @@
-export const devtool = "source-map";
+// export const devtool = "source-map";
 export const mode = "none";
 export const module = {
   rules: [
