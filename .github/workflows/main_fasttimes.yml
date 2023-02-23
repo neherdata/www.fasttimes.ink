@@ -37,6 +37,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: release
+          path: release.zip
 
   deploy:
     runs-on: ubuntu-latest
@@ -50,7 +51,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: release
-          path: release.zip
 
       - name: unzip artifact for deployment
         run: unzip release.zip
