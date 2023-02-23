@@ -21,8 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
-    "build": "react-scripts build",
+    "start": "pm2 serve /home/site/wwwroot/build --no-daemon --spa",
+    "build": "webpack",
     "start:dev": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
     "build:dev": "npm run build -- --watch --mode=development",
     "test": "react-scripts test",
