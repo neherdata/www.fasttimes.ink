@@ -18,7 +18,7 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 const color = orange[100];
 
-export const Home = () => {
+const Home = () => {
   // OVERALL PLANS: Compress contact info into background; Add in artist cards w/ links to individual socials; add in contact section on bottom; add in footer;
   // finish backend for email configs; Finish any remaining detailing
   return (

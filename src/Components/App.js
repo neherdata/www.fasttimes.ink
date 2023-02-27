@@ -1,10 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Home from "./Components/Home";
-import Artists from "./Components/Artists";
-import ContactUs from "./Components/Contact";
-import Faq from "./Components/Faq";
-import Navi from "./Components/Nav";
+import Home from "./Home";
+import Artists from "./Artists";
+import ContactUs from "./Contact";
+import Faq from "./Faq";
+import Navi from "./Nav";
 
 const App = () => {
   return (
