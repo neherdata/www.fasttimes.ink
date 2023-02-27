@@ -11,6 +11,10 @@ import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PhoneIcon from "@mui/icons-material/Phone";
 import RoomIcon from "@mui/icons-material/Room";
+import EmailIcon from "@mui/icons-material/Email";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const color = orange[100];
 
@@ -37,7 +41,7 @@ export const Home = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <RoomIcon />
+                  <RoomIcon sx={{ fontSize: 30 }} />
                   727 17th Ave <br /> Belmar, NJ 07719
                 </a>
               </h5>
@@ -45,21 +49,26 @@ export const Home = () => {
             <div className="info-obj">
               <h5>
                 <a href="tel:7322801238">
-                  <PhoneIcon />
+                  <PhoneIcon sx={{ fontSize: 30 }} />
                   732-280-1238
                 </a>
-                <br />
-                <a href="mailto:blankemail.com">*Email Placeholder*</a>
+
+                <a href="mailto:blankemail.com">
+                  {" "}
+                  <EmailIcon sx={{ fontSize: 30 }} />
+                  *Email Placeholder*
+                </a>
                 <br />
               </h5>
             </div>
+
             <div className="info-obj">
               <h5>
                 <a
                   href="https://www.google.com/maps/place/Fast+Times+Tattoo/@40.1730729,-74.0318747,17z/data=!3m1!4b1!4m6!3m5!1s0x89c227fd8642a003:0xd25dd79794c88956!8m2!3d40.1730729!4d-74.029686!16s%2Fg%2F11b5wrwkl1"
                   rel="noreferrer"
                 >
-                  <CalendarMonthIcon />
+                  <CalendarMonthIcon sx={{ fontSize: 30 }} />
                   Mon-Sun 1pm - 8pm
                   <br />
                   Sun 12pm - 5pm
@@ -71,7 +80,7 @@ export const Home = () => {
 
         <div className="artist-cards">
           <Card
-            sx={{ maxWidth: 650, backgroundColor: "#4f4a47" }}
+            sx={{ maxWidth: 800, backgroundColor: "#4f4a47" }}
             className="card"
           >
             <CardActionArea>
@@ -120,6 +129,8 @@ export const Home = () => {
                 <ArrowRightIcon sx={{ height: 20, width: 20 }} />
                 View Instagram
               </Typography>
+            </CardActions>
+            <CardActions>
               <Button
                 className="baa-btn"
                 variant="contained"
@@ -127,9 +138,9 @@ export const Home = () => {
                 href="#contained-buttons"
                 sx={{
                   color: "#FFFAF0",
-                  backgroundColor: "#FFDAB9",
+                  backgroundColor: "#B22222",
                   "&:hover": {
-                    backgroundColor: "#ffb237",
+                    backgroundColor: "white",
                   },
                 }}
               >
@@ -139,7 +150,7 @@ export const Home = () => {
           </Card>
 
           <Card
-            sx={{ maxWidth: 650, backgroundColor: "#4f4a47" }}
+            sx={{ maxWidth: 800, backgroundColor: "#4f4a47" }}
             className="card"
           >
             <CardActionArea>
@@ -193,6 +204,8 @@ export const Home = () => {
                 <ArrowRightIcon sx={{ height: 20, width: 20 }} />
                 View Instagram
               </Typography>
+            </CardActions>
+            <CardActions>
               <Button
                 className="baa-btn"
                 variant="contained"
@@ -200,9 +213,9 @@ export const Home = () => {
                 href="#contained-buttons"
                 sx={{
                   color: "#FFFAF0",
-                  backgroundColor: "#FFDAB9",
+                  backgroundColor: "#B22222",
                   "&:hover": {
-                    backgroundColor: "#ffb237",
+                    backgroundColor: "white",
                   },
                 }}
               >
@@ -213,7 +226,7 @@ export const Home = () => {
 
           <Card
             sx={{
-              maxWidth: 650,
+              maxWidth: 800,
               backgroundColor: "#4f4a47",
             }}
             className="card"
@@ -270,6 +283,8 @@ export const Home = () => {
                 <ArrowRightIcon sx={{ height: 20, width: 20 }} />
                 View Instagram
               </Typography>
+            </CardActions>
+            <CardActions>
               <Button
                 className="baa-btn"
                 variant="contained"
@@ -277,9 +292,167 @@ export const Home = () => {
                 href="#contained-buttons"
                 sx={{
                   color: "#FFFAF0",
-                  backgroundColor: "#FFDAB9",
+                  backgroundColor: "#B22222",
                   "&:hover": {
-                    backgroundColor: "#ffd084",
+                    backgroundColor: "white",
+                  },
+                }}
+              >
+                Book an Appointment
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card
+            sx={{
+              maxWidth: 800,
+              backgroundColor: "#4f4a47",
+            }}
+            className="card"
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                width="400"
+                image=""
+                alt="Isaiah Onaga"
+                sx={{ backgroundColor: "grey" }}
+              />
+            </CardActionArea>
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                sx={{
+                  color: "#FFDAB9",
+                }}
+              >
+                ISAIAH ONAGA
+              </Typography>
+            </CardContent>
+            <CardActions
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "baseline",
+                color: "white",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Work
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Instagram
+              </Typography>
+            </CardActions>
+            <CardActions>
+              <Button
+                className="baa-btn"
+                variant="contained"
+                size="large"
+                href="#contained-buttons"
+                sx={{
+                  color: "#FFFAF0",
+                  backgroundColor: "#B22222",
+                  "&:hover": {
+                    backgroundColor: "white",
+                  },
+                }}
+              >
+                Book an Appointment
+              </Button>
+            </CardActions>
+          </Card>
+
+          <Card
+            sx={{
+              maxWidth: 800,
+              backgroundColor: "#4f4a47",
+            }}
+            className="card"
+          >
+            <CardActionArea>
+              <CardMedia
+                component="img"
+                height="300"
+                width="400"
+                image=""
+                alt="Billy Pappas"
+                sx={{ backgroundColor: "grey" }}
+              />
+            </CardActionArea>
+            <CardContent>
+              <Typography
+                gutterBottom
+                variant="h4"
+                sx={{
+                  color: "#FFDAB9",
+                }}
+              >
+                BILLY PAPPAS
+              </Typography>
+            </CardContent>
+            <CardActions
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "baseline",
+                color: "white",
+              }}
+            >
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Work
+              </Typography>
+              <Typography
+                variant="h5"
+                sx={{
+                  "&:hover": {
+                    color: "#FFDAB9",
+                  },
+                }}
+              >
+                <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                View Instagram
+              </Typography>
+            </CardActions>
+            <CardActions>
+              <Button
+                className="baa-btn"
+                variant="contained"
+                size="large"
+                href="#contained-buttons"
+                sx={{
+                  color: "#FFFAF0",
+                  backgroundColor: "#B22222",
+                  "&:hover": {
+                    backgroundColor: "white",
                   },
                 }}
               >
@@ -290,13 +463,28 @@ export const Home = () => {
         </div>
 
         <div className="about">
+          <img src="static/fasttimestattoologo.jpg" className="about-logo" />
           <h1> ABOUT FAST TIMES TATTOO </h1>
           <h2> Text Placeholder</h2>
         </div>
-      </div>
-      <div className="footer">
-        <div className="s"></div>© 2023 Copyright Fast Times Tattoo. All rights
-        reserved.
+
+        <div className="footer-info">
+          <div className="ftr-logos">
+            <a href="https://www.google.com/maps/place/Fast+Times+Tattoo/@40.1730729,-74.0318747,17z/data=!3m1!4b1!4m6!3m5!1s0x89c227fd8642a003:0xd25dd79794c88956!8m2!3d40.1730729!4d-74.029686!16s%2Fg%2F11b5wrwkl1">
+              <GoogleIcon sx={{ fontSize: 40 }} />{" "}
+            </a>
+            <a href="https://www.facebook.com/FastTimesBelmar/">
+              <FacebookIcon sx={{ fontSize: 40 }} href="" />{" "}
+            </a>
+            <a href="https://www.instagram.com/fasttimestattoo/?hl=en">
+              <InstagramIcon sx={{ fontSize: 40 }} />{" "}
+            </a>
+          </div>
+          <div className="ftr-notes"> WALK-INS WELCOMED</div>
+        </div>
+        <div className="footer-cr">
+          © 2023 Copyright Fast Times Tattoo. All rights reserved.
+        </div>
       </div>
     </>
   );

@@ -21,7 +21,7 @@ const Navi = () => {
     <div className={show ? "header header-bg" : "header"}>
       <div className={show ? "logo-dis" : "logo-mob"}>
         <a href="/" className="logo">
-          <img src="" alt="logo" />
+          <img src="static/phLogo.png" alt="logo" />
         </a>
       </div>
 
@@ -30,7 +30,7 @@ const Navi = () => {
           {show ? null : click ? (
             <FaTimes size={30} style={{ color: "#ffffff" }} />
           ) : (
-            <CgMenuRound size={60} style={{ color: "#FFDAB9" }} />
+            <CgMenuRound size={90} style={{ color: "#FFDAB9" }} />
           )}
         </div>
 

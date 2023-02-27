@@ -41,7 +41,8 @@ a:link {
 }
 a:visited {
 	text-decoration: none;
-	color: black;
+	color: white;
+
 }
 a:hover {
 	text-decoration: none;
