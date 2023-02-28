@@ -12,36 +12,42 @@ on:
 env:
   AZURE_WEBAPP_NAME: "fasttimes" # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
-  NODE_VERSION: "16.x" # set this to the node version to use
+  NODE_VERSION: "18.x" # set this to the node version to use
+
+permissions:
+  contents: read
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-          # node-version: ${{ env.NODE_VERSION }}
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
 
       - name: npm install + npm run start:dev
         run: |
           npm install
           npm run start:dev
+        working-directory: "."
 
-      - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+      # - name: Zip artifact for deployment
+      #   run: zip node-app.zip ./* -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
         with:
-          name: release
-          path: release.zip
+          name: node-app
+          # path: node-app.zip
+          path: .
 
   deploy:
+    permissions:
+      contents: none
     runs-on: ubuntu-latest
     needs: build
     environment:
@@ -52,16 +58,16 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: release
+          name: node-app
 
-      - name: unzip artifact for deployment
-        run: unzip release.zip
+      # - name: unzip artifact for deployment
+      #   run: unzip node-app.zip
 
       - name: "Deploy to Azure Web App"
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: "fasttimes"
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D808924994BF4D5AB373CB4CC016BF56 }}
-          package: .
+          package: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
