@@ -24,7 +24,7 @@
   "scripts": {
     "start": "pm2 serve /home/site/wwwroot/build --no-daemon --spa",
     "build": "webpack --config webpack.config.js",
-    "start:dev": "nodemon server/index.js --ignore dist/ --ignore src / & npm run build:dev",
+    "start:dev": "set PORT=8080 && nodemon server/index.js --ignore dist/ --ignore src / && npm run build:dev",
     "build:dev": "npm run build  --mode=development",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
