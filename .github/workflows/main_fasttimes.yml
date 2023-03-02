@@ -35,8 +35,8 @@ jobs:
           npm run start:dev
         working-directory: "."
 
-      # - name: Zip artifact for deployment
-      #   run: zip node-app.zip ./* -r
+      - name: Zip artifact for deployment
+        run: zip node-app.zip ./* -r
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -60,8 +60,8 @@ jobs:
         with:
           name: node-app
 
-      # - name: unzip artifact for deployment
-      #   run: unzip node-app.zip
+      - name: unzip artifact for deployment
+        run: unzip node-app.zip
 
       - name: "Deploy to Azure Web App"
         id: deploy-to-webapp
