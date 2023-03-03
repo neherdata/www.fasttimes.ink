@@ -1,7 +1,7 @@
 # www-fasttimes-dot-ink
 
-
-[![.github/workflows/azure-webapps-node.yml](https://github.com/neherdata/www-fasttimes-dot-ink/actions/workflows/azure-webapps-node.yml/badge.svg?branch=main)](https://github.com/neherdata/www-fasttimes-dot-ink/actions/workflows/azure-webapps-node.yml)
+[![Build and deploy Node.js app to Azure Web App - fasttimes](https://github.com/neherdata/www-fasttimes-dot-ink/actions/workflows/main_fasttimes.yml/badge.svg)](https://github.com/neherdata/www-fasttimes-dot-ink/actions/workflows/main_fasttimes.yml)
 
 ## client: FasttimesTattoo
-## project:  www-fasttimes-dot-ink
+
+## project: www-fasttimes-dot-ink

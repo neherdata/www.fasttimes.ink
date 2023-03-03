@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: "npm"
+          # cache: "npm"
 
       - name: npm install + npm run start:dev
         run: |
@@ -59,10 +59,10 @@ jobs:
       - name: Download artifact from build job
         uses: actions/download-artifact@v3
         with:
-          name: node-app
+          name: node-app.zip
 
-      - name: unzip artifact for deployment
-        run: unzip node-app.zip
+      # - name: unzip artifact for deployment
+      #   run: unzip node-app.zip
 
       - name: "Deploy to Azure Web App"
         id: deploy-to-webapp
