@@ -30,9 +30,9 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           # cache: "npm"
 
-      - name: npm install + npm run start:dev
+      - name: npm ci + npm run start:dev
         run: |
-          npm install
+          npm ci
           npm run start:dev
         working-directory: "."
 
