@@ -11,7 +11,7 @@ on:
 
 env:
   AZURE_WEBAPP_NAME: "fasttimes" # set this to your application's name
-  AZURE_WEBAPP_PACKAGE_PATH: "." # set this to the path to your web app project, defaults to the repository root
+  AZURE_WEBAPP_PACKAGE_PATH: "node-app.zip" # set this to the path to your web app project, defaults to the repository root
   NODE_VERSION: "18.x" # set this to the node version to use
   PORT: "8080"
 
@@ -43,8 +43,8 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: node-app
-          # path: node-app.zip
-          path: .
+          path: node-app.zip
+          # path: .
 
   deploy:
     permissions:
