@@ -33,7 +33,7 @@ jobs:
       - name: npm ci + npm run start:dev
         run: |
           npm ci
-          npm run start:build
+          npm run build
         working-directory: "."
 
       - name: Zip artifact for deployment
