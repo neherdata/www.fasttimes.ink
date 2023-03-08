@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { CgMenuRound } from "react-icons/cg";
+import { Link } from "react-router-dom";
 
 const Navi = () => {
   const [click, setClick] = useState(false);
@@ -20,9 +21,9 @@ const Navi = () => {
   return (
     <div className={show ? "header header-bg" : "header"}>
       <div className={show ? "logo-dis" : "logo-mob"}>
-        <a href="/" className="logo">
+        <Link to="/" className="logo">
           <img src="static/phLogo.png" alt="logo" />
-        </a>
+        </Link>
       </div>
 
       <nav className="navbar">
@@ -36,24 +37,24 @@ const Navi = () => {
 
         <ul className={click ? "nav-menu-active" : "nav-menu"}>
           <ul className="nav-item">
-            <a href="/" onClick={closeMenu}>
+            <Link to="/" onClick={closeMenu}>
               Home
-            </a>
+            </Link>
           </ul>
           <ul className="nav-item">
-            <a href="/artists" onClick={closeMenu}>
+            <Link to="/artists" onClick={closeMenu}>
               Artists
-            </a>
+            </Link>
           </ul>
           <ul className="nav-item">
-            <a href="/contact" onClick={closeMenu}>
+            <Link to="/contact" onClick={closeMenu}>
               Contact Us
-            </a>
+            </Link>
           </ul>
           <ul className="nav-item">
-            <a href="/faq" onClick={closeMenu}>
+            <Link to="/faq" onClick={closeMenu}>
               FAQs
-            </a>
+            </Link>
           </ul>
         </ul>
       </nav>

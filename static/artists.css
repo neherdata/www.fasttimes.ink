@@ -1,0 +1,75 @@
+ /* artist styling */
+  .artist-container  {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     flex: 1 1 10em;
+     box-sizing: border-box;
+     justify-content: space-evenly;
+     margin-top: 2%;
+     align-items: center;
+ }
+ 
+ /*.artist-cards  {*/
+ /*    display: flex;*/
+ /*    flex-wrap: wrap;*/
+ /*    flex-direction: row;*/
+ /*    flex: 1 1 10em;*/
+ /*    box-sizing: border-box;*/
+ /*    justify-content: space-evenly;*/
+ /*    margin-top: 2%;*/
+ /*    align-items: center;*/
+ /*}*/
+ 
+ .artist-container > .artist-cards > .h3:hover{
+     color: white;
+ }
+ .artist-container > .artist-cards > div {
+     display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 3rem ;
+    text-transform: capitalize;
+    margin: inherit;
+    justify-content: space-around;
+         align-items: center;
+ }
+
+ .artist-cards > .div > .h5 {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .card{
+     margin: inherit;
+ }
+ 
+ 
+a:link {
+	text-decoration: none;
+	color: white;
+}
+a:visited {
+	text-decoration: none;
+	color: white;
+
+}
+
+ a:visited:hover{
+     color:#FFDAB9;
+ }
+ 
+a:hover {
+	text-decoration: none;
+	color: white;
+}
+a:active {
+	text-decoration: none;
+	color: white;
+}
+
+a:link:hover{
+     color: #FFDAB9;
+}
+ 
+
+  /*Jeff Michel Hans Ryan Isaiah Onaga Karissa Anne Billy Pappas*/
