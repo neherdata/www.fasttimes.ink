@@ -26,14 +26,14 @@ const ArtistCards = () => {
         return (
           <div className="artist-cards">
             <Card
-              sx={{ maxWidth: 800, backgroundColor: "#4f4a47" }}
+              sx={{ maxWidth: 550, backgroundColor: "#4f4a47" }}
               className="card"
             >
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  height="300"
-                  width="400"
+                  height="550"
+                  width="550"
                   image=""
                   alt={artist.name}
                   sx={{ backgroundColor: "grey" }}
@@ -65,7 +65,7 @@ const ArtistCards = () => {
                     },
                   }}
                 >
-                  <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                  <ArrowRightIcon sx={{ height: 30, width: 30 }} />
                   View Work
                 </Typography>
                 <Typography
@@ -77,7 +77,7 @@ const ArtistCards = () => {
                   }}
                 >
                   <Link to={artist.social} className="link">
-                    <ArrowRightIcon sx={{ height: 20, width: 20 }} />
+                    <ArrowRightIcon sx={{ height: 30, width: 30 }} />
                     View Instagram
                   </Link>
                 </Typography>
@@ -87,7 +87,7 @@ const ArtistCards = () => {
                   className="baa-btn"
                   variant="contained"
                   size="large"
-                  href="#contained-buttons"
+                  href=""
                   sx={{
                     color: "#FFFAF0",
                     backgroundColor: "#B22222",
@@ -96,7 +96,7 @@ const ArtistCards = () => {
                     },
                   }}
                 >
-                  Book an Appointment
+                  Request Appointment
                 </Button>
               </CardActions>
             </Card>

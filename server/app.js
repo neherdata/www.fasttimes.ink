@@ -12,13 +12,13 @@ app.get("/", (req, res) =>
 
 app.use("/artists", require("./artists"));
 
-// app.get("/contact", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../static/index.html"));
-// });
+app.get("/contact", (req, res) => {
+  res.send("contact");
+});
 
-// app.get("/faq", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../static/index.html"));
-// });
+app.get("/faq", (req, res) => {
+  res.send("faq");
+});
 
 app.use((err, req, res, next) => {
   res.status(500).send(err);

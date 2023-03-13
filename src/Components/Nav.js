@@ -28,7 +28,7 @@ const Navi = () => {
 
       <nav className="navbar">
         <div className="hamburger" onClick={clickHandler}>
-          {show ? null : click ? (
+          {click ? (
             <FaTimes size={30} style={{ color: "#ffffff" }} />
           ) : (
             <CgMenuRound size={90} style={{ color: "#FFDAB9" }} />
