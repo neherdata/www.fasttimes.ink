@@ -10,14 +10,18 @@
     padding-bottom: 0;
     background-color: transparent;
     transition: .3s;
-    flex-direction: column;
-    display: flex;
-     font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
-    justify-content:center;
-    align-content: center;
-    align-items: center;
-
+    
+ 
+  display: flex;
+     flex-wrap: wrap;
+    	Flex-direction: column;
+	Justify-content: center;
+	Align-items: center;
+	gap: 1rem;
+ gap: clamp(1rem, 1.5vw,1.25rem);
+margin: auto;
 }
 
 .header-bg {
@@ -75,8 +79,9 @@
     align-content: center;
     align-items: center;
     max-width: 1240px;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin: auto;
     height: 100%;
    flex-direction: column;
 }
@@ -126,7 +131,7 @@
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1280px) {
      .nav-menu-active {
     background-color: #4f4a47;
     z-index: 3;
@@ -137,11 +142,20 @@
     will-change: transform;
     overflow-y: auto;
     background: rgb(75, 76, 75);
-    width: 300px;
+    /*width: 300px;*/
     right: 0px;
     transform: translateX(0%);
     box-shadow: rgb(0 0 0 / 15%) -2px 2px 4px;
     margin: 0;
+    
+      display: flex;
+     flex-wrap: wrap;
+    	Flex-direction: column;
+	Justify-content: center;
+	Align-items: center;
+	gap: 1rem;
+ gap: clamp(1rem, 1.5vw,1.25rem);
+ width: 35%;
 }
 ul.nav-menu-active {
     display: flex;
@@ -163,24 +177,49 @@ ul.nav-menu-active {
     flex-direction: column;
     flex-wrap: wrap;
     align-content: flex-start;
-    margin-left: 8vw;  
+    margin-left: auto;  
+    
+        cursor: pointer;
+   Justify-content: center;
+
+	gap: 1rem;
+ gap: clamp(1rem, 1.5vw,1.25rem);
+ width: 96%;
+ margin: auto;
     }
     
     .header{
     z-index: 2;
    transform: translateZ(0px);
     top: 0px;
-    width: 733.333px;
+    width: 96%;
     position: fixed;
     transform: unset!important;
     display: flex;
         flex-direction: row;
+         justify-content: center;
+	align-items: center;
+	margin: auto;
+	right: 0;
+	left: 0;
+	flex-wrap: nowrap;
     }
-    
+  
+
 
     .hamburger {
-        display: block;
+        display: flex;
         cursor: pointer;
+   Justify-content: center;
+	Align-items: center;
+	gap: 1rem;
+ gap: clamp(1rem, 1.5vw,1.25rem);
+ width: 96%;
+ margin: auto;
+ 
     }
-        
+        .header .navbar {
+            margin-right: 0;
+            
+        }
 }

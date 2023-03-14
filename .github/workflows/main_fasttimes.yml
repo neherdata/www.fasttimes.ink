@@ -30,10 +30,10 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
           # cache: "npm"
 
-      - name: npm ci + npm run start:dev
+      - name: npm ci + npm run start
         run: |
           npm ci
-          npm run build:dev
+          npm run start
         working-directory: "."
 
       - name: Zip artifact for deployment

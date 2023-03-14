@@ -27,10 +27,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "pm2 serve /home/site/wwwroot/build --no-daemon --spa",
-    "build": "webpack --config webpack.config.js",
-    "start:dev": "set PORT=8080 && nodemon server/index.js --ignore dist/ --ignore src / && npm run build:dev",
-    "build:dev": "npm run build  --mode=development",
+    "start": "pm2 serve /home/site/wwwroot/build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -68,9 +65,6 @@
     "redux": "^4.2.1",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.4.2",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.0"
   },
   "description": "",
   "repository": {
