@@ -1,5 +1,5 @@
 {
-  "name": "www-fasttimes-dot-ink",
+  "name": "www.fasttimes.ink",
   "version": "0.1.0",
   "main": "index.js",
   "private": true,
@@ -14,7 +14,6 @@
     "@testing-library/user-event": "^13.5.0",
     "bcrypt": "^5.1.0",
     "express": "^4.18.2",
-
     "jsonwebtoken": "^9.0.0",
     "pm2": "^5.2.2",
     "postgres": "^3.3.3",
@@ -69,13 +68,13 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/neherdata/www-fasttimes-dot-ink.git"
+    "url": "git+https://github.com/neherdata/www.fasttimes.ink.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/neherdata/www-fasttimes-dot-ink/issues"
+    "url": "https://github.com/neherdata/www.fasttimes.ink/issues"
   },
-  "homepage": "https://github.com/neherdata/www-fasttimes-dot-ink#readme"
+  "homepage": "https://github.com/neherdata/www.fasttimes.ink#readme"
 }
