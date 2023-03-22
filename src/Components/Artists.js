@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-// import ArtistCards from "./ArtistCards";
-import { fetchArtists } from "../store";
+// import { useDispatch } from "react-redux";
+// // import ArtistCards from "./ArtistCards";
+// import { fetchArtists } from "../store";
 
 const Artists = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(fetchArtists());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchArtists());
+  // }, []);
 
   return (
     <div className="artist-page-cont">

@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import React from "react";
+import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -8,17 +8,17 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-import { fetchArtists } from "../store";
+// import { fetchArtists } from "../store";
 
 const ArtistCards = () => {
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   const { artists } = useSelector((state) => state);
 
   // const { artists, admin } = useSelector((state) => state); -- for later admin usage in order to update artists.
 
-  useEffect(() => {
-    dispatch(fetchArtists());
-  }, []);
+  // useEffect(() => {
+  //   dispatch(fetchArtists());
+  // }, []);
 
   return (
     <div className="artist-container">

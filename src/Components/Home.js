@@ -68,7 +68,11 @@ const Home = () => {
         <ArtistCards />
 
         <div className="about">
-          <img src="static/fasttimestattoologo.jpg" className="about-logo" />
+          <img
+            src="static/fasttimestattoologo.jpg"
+            alt="logo"
+            className="about-logo"
+          />
           <h1> ABOUT FAST TIMES TATTOO </h1>
           <h2> Text Placeholder</h2>
         </div>
