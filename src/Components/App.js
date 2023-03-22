@@ -6,6 +6,9 @@ import ArtistCards from "./ArtistCards";
 import ContactUs from "./Contact";
 import Faq from "./Faq";
 import Navi from "./Nav";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import GoogleIcon from "@mui/icons-material/Google";
 
 const App = () => {
   return (
