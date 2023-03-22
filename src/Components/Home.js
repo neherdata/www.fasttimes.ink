@@ -1,23 +1,9 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { Link } from "react-router-dom";
 import ArtistCards from "./ArtistCards";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Typography from "@mui/material/Typography";
-import { Button, CardActionArea, CardActions } from "@mui/material";
-import { orange } from "@mui/material/colors";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import PhoneIcon from "@mui/icons-material/Phone";
 import RoomIcon from "@mui/icons-material/Room";
 import EmailIcon from "@mui/icons-material/Email";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import GoogleIcon from "@mui/icons-material/Google";
-
-const color = orange[100];
 
 const Home = () => {
   // OVERALL PLANS: Compress contact info into background(fixed cont); Add in artist cards w/ links to individual socials(fixed, adding email / contact info);

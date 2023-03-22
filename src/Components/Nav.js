@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { CgMenuRound } from "react-icons/cg";
 import { Link } from "react-router-dom";
 

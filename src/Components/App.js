@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Artists from "./Artists";
-import ArtistCards from "./ArtistCards";
+// import ArtistCards from "./ArtistCards";
 import ContactUs from "./Contact";
 import Faq from "./Faq";
 import Navi from "./Nav";
